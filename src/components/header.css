@@ -1,0 +1,16 @@
+.container{
+    background-color:cadetblue;
+    height: 100px;
+    color:white;
+
+}
+.colom{
+    color: black;
+}
+img{
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 60px;
+    margin-left: 100px;
+}

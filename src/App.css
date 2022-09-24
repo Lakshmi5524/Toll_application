@@ -1,18 +1,4 @@
-.App{
-text-align: center;
-}
-nav{
-display: flex;
-justify-content: space-around;
-align-items: center;
-background-color: darkslategray;
-color: white;
-min-height: 10vh;
-}
-.nav_link{
-width: 40%;
-display: flex;
-justify-content: space-around;
-align-items: center;
-list-style: none;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Ubuntu:wght@300;400&display=swap');
+body{
+font-family: 'Poppins', sans-serif;
 }
