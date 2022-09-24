@@ -12,9 +12,9 @@ const Viewentry = () => {
   }, [blogs])
 
   const handleDelete = (indexs) => {
-    const _blogs = blogs.filter((val, blogindex) => {
+    const _blogs = blogs.filter((blog, blogindex) => {
       if (blogindex !== indexs) {
-        return val
+        return blog
       }
     })
     setBlogs(_blogs)
