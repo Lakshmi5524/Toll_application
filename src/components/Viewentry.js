@@ -11,15 +11,15 @@ const Viewentry = () => {
     setBlogs(JSON.parse(blogs))
   }, [blogs])
 
-  const handleDelete = (indexs) => {
-    const _blogs = blogs.filter((blog, blogindex) => {
-      if (blogindex !== indexs) {
-        return blog
-      }
-    })
-    setBlogs(_blogs)
-    localStorage.setItem("blogs", JSON.stringify(_blogs))
-  }
+  //const handleDelete = (indexs) => {
+  //  const _blogs = blogs.filter((blog, blogindex) => {
+  //    if (blogindex !== indexs) {
+  //      return blog
+  //    }
+  //  })
+  //  setBlogs(_blogs)
+  //  localStorage.setItem("blogs", JSON.stringify(_blogs))
+  //}
 
   const handleEdit = (index) => {
     localStorage.setItem("editIndex", index)
@@ -58,12 +58,12 @@ const Viewentry = () => {
                         <td>{value.vehicle}</td>
                         <td>{value.number}</td>
                         <td>{value.tarifee}</td>
-                        <button
+                        {/*<button
                           onClick={() => handleDelete(index)}
                           className="Deletebtn"
                         >
                           Delete
-                        </button>
+                        </button>*/}
 
                         <button
                           onClick={() => handleEdit(index)}
