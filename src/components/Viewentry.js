@@ -12,9 +12,9 @@ const Viewentry = () => {
   }, [blogs])
 
   const handleDelete = (indexs) => {
-    const _blogs = blogs.filter((value, blogindex) => {
+    const _blogs = blogs.filter((val, blogindex) => {
       if (blogindex !== indexs) {
-        return value
+        return val
       }
     })
     setBlogs(_blogs)
@@ -54,10 +54,10 @@ const Viewentry = () => {
                 ? blogs.map((value, index) => {
                     return (
                       <tr key={index}>
-                        <td>{value?.tollname}</td>
-                        <td>{value?.vehicle}</td>
-                        <td>{value?.number}</td>
-                        <td>{value?.tarifee}</td>
+                        <td>{value.tollname}</td>
+                        <td>{value.vehicle}</td>
+                        <td>{value.number}</td>
+                        <td>{value.tarifee}</td>
                         <button
                           onClick={() => handleDelete(index)}
                           className="Deletebtn"

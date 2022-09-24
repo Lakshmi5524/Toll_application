@@ -24,7 +24,7 @@ const Edit = () => {
         : []
 
     const _blogs = blogs.map((blog, indexs) => {
-      if (indexs == localStorage.getItem("editIndex")) {
+      if (indexs === localStorage.getItem("editIndex")) {
         return { tollname, vehicle, number, tarifee }
       } else {
         return blog

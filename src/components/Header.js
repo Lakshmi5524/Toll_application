@@ -8,7 +8,10 @@ function Header() {
     <div className="container">
       <div className="row">
         <Link to="/">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeGyFJf7eoUp_qwXqEnuIC50x6yqflTAd1j128l_U7m_PXW4Xu-ft-n3nOlR6f2RyJ0Q&usqp=CAU.png" />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeGyFJf7eoUp_qwXqEnuIC50x6yqflTAd1j128l_U7m_PXW4Xu-ft-n3nOlR6f2RyJ0Q&usqp=CAU.png"
+            alt="img"
+          />
         </Link>
       </div>
     </div>
